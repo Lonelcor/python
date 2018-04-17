@@ -1,7 +1,7 @@
 import requests
 import vk
 
-authToken = '6f9be692be84c7d1df7e4bfddff816aaf8eb59c85808dab6cc4fb88b609fc4896429a9c04252ad1a805f5'
+authToken = ''
 items = []
 
 

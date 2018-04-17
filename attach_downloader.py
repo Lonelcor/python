@@ -6,7 +6,7 @@ from random import choice
 from string import digits
 
 
-auth_token = '38022366193a179bb9eb0a316d346b1ee9eeee9e8d0bf842d49b5c0edaf2688b474e434a67408f3f43e56'
+auth_token = ''
 vk_api = ''
 links = []
 
