@@ -6,9 +6,11 @@ from random import choice
 from string import digits
 
 
-auth_token = ''
+auth_token = #TOKEN
 vk_api = ''
+v = #VER.
 links = []
+user_id = #ID
 
 
 def main():
@@ -35,7 +37,7 @@ def create_session(auth_token):
 	
 	
 def get_dialogs():
-    result = vk_api.messages.getHistoryAttachments(peer_id=138378862, media_type="photo", start_from="344850", count=200, v=5.69)
+    result = vk_api.messages.getHistoryAttachments(peer_id=user_id, media_type="photo", start_from="#SHIFT", count=200, v=v)
     for i in range(len(result['items'])):
         if('photo_2560' in result['items'][i]['attachment']['photo']):
             links.append(result['items'][i]['attachment']['photo']['photo_2560'])
@@ -49,7 +51,7 @@ def get_dialogs():
             print(result['items'][i]['message_id'])
     for i in links:
         download_images(i)
-    print("Загрузка завершена.")
+    print("Done!")
 
 
 if __name__ == "__main__":
